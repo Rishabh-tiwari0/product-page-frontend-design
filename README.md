@@ -29,7 +29,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/product-page.git
+   gh repo clone Rishabh-tiwari0/product-page-frontend-design
    Navigate into the project directory:
    ```
 
