@@ -9,3 +9,7 @@
   @apply text-3xl sm:text-4xl;
   font-weight: 700;
 }
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

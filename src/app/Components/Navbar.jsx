@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar container: Flexbox used to align items horizontally */}
-      <div className="flex justify-between">
+      <div className="flex justify-between p-2">
         {/* Left side of the navbar containing the menu icon, brand title, and navigation links */}
         <div className="flex items-center flex-wrap sm:h-16 gap-12">
           {/* Render the menu icon for mobile view */}
