@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Page
 
-## Getting Started
+This is a product page created using Next.js that displays a gallery of product images with thumbnails.
 
-First, run the development server:
+## Table of Contents
 
-```bash
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Gallery Images](#gallery-images)
+- [License](#license)
+
+## Project Overview
+
+This project is a simple product page where a collection of images and their thumbnails are displayed in a gallery. The images are stored in the `public/images` folder and are used within the components of the Next.js application.
+
+## Features
+
+- Displays a gallery of product images with thumbnails.
+- Allows for easy management of images using an array of paths.
+- Built with Next.js and React.
+- Includes an `Inter` font from Google Fonts.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/product-page.git
+   Navigate into the project directory:
+   ```
+
+bash
+Copy code
+cd product-page
+Install the dependencies:
+
+bash
+Copy code
+npm install
+Run the development server:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser to see the application in action.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Usage
+The project uses an array of image paths located in the public/images folder. The images are dynamically rendered on the page using the ProductGallery component.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+How to Add More Images
+To add more images, simply place the new image files in the public/images directory and update the images array in your code:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+javascript
+Copy code
+const images = [
+"/images/new-image-1.jpg",
+"/images/new-image-2.jpg",
+// add more image paths here
+];
+Then, the new images will automatically appear in the gallery.
 
-## Learn More
+Folder Structure
+arduino
+Copy code
+├── public
+│ └── images
+│ ├── image-product-1-thumbnail.jpg
+│ ├── image-product-1.jpg
+│ ├── image-product-2-thumbnail.jpg
+│ ├── image-product-2.jpg
+│ ├── image-product-3-thumbnail.jpg
+│ ├── image-product-3.jpg
+│ ├── image-product-4-thumbnail.jpg
+│ └── image-product-4.jpg
+├── src
+│ └── components
+│ └── ProductGallery.js
+└── pages
+└── index.js
+Gallery Images
+The images used in the project are stored in the public/images directory. Here's a list of the images included:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+image-product-1-thumbnail.jpg – Thumbnail of Product 1.
+image-product-1.jpg – Full image of Product 1.
+image-product-2-thumbnail.jpg – Thumbnail of Product 2.
+image-product-2.jpg – Full image of Product 2.
+image-product-3-thumbnail.jpg – Thumbnail of Product 3.
+image-product-3.jpg – Full image of Product 3.
+image-product-4-thumbnail.jpg – Thumbnail of Product 4.
+image-product-4.jpg – Full image of Product 4.
+License
+This project is licensed under the MIT License.
