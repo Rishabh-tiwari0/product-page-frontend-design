@@ -5,7 +5,7 @@ const Navlist = ({ isNavOpen, setIsNavOpen, toggleNav }) => {
   const navItems = ["Collections", "Men", "Women", "About", "Contact"];
 
   return (
-    <div className="absolute w-full h-full bg-slate-900/70 left-0 text-black top-0  sm:hidden">
+    <div className="absolute w-full h-full bg-slate-900/70 left-0 text-black top-0  sm:hidden z-10">
       <div className="w-2/3 bg-white p-3 h-full">
         {/* Close icon that closes the Navlist */}
         <img

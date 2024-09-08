@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-
+import ProductCounter from "./product_counter/ProductCounter";
+import Button from "./add_to_cart_button/Button";
 const images = [
   "images/image-product-1.jpg",
   "images/image-product-2.jpg",
@@ -42,7 +43,7 @@ const ProductDetail = () => {
           className="-z-10 sm:z-0 sm:w-[80%] sm:rounded-xl"
         />
         {/* for mobile view product pic navigation */}
-        <div className="absolute top-1/2 w-full -translate-y-[100%] flex justify-between px-3 sm:hidden">
+        <div className="absolute top-1/2 w-full -translate-y-[100%] flex justify-between px-3 sm:hidden z-0">
           <button
             className="w-9 h-9 bg-white rounded-full grid place-content-center shadow-lg cursor-pointer"
             onClick={handlePrevClick}
@@ -78,7 +79,7 @@ const ProductDetail = () => {
         </div>
       </div>
       {/* product detail section */}
-      <div className="p-3 flex-1 sm:max-w-96 sm:h-full sm:my-auto">
+      <div className="p-3 flex-1 sm:max-w-[430px] sm:h-full sm:my-auto">
         <p className="font-semibold text-sm text-gray-500">SNEAKER COMPANY</p>
         <h1 className="title text-gray-950 mt-2">
           Fall Limited Edition Sneakers{" "}
@@ -102,6 +103,10 @@ const ProductDetail = () => {
           <h3 className="text-gray-500 font-semibold line-through decoration-2">
             $250
           </h3>
+        </div>
+        <div className="sm:flex sm:gap-4">
+          <ProductCounter />
+          <Button />
         </div>
       </div>
     </div>

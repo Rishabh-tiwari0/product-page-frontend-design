@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar";
 
 export default function Home() {
   return (
-    <div className="w-[100vw] sm:w-[60vw] mx-auto">
+    <div className="w-[100vw] sm:w-[60vw] mx-auto pb-6 sm:pb-2">
       <Navbar />
       <ProductDetail />
     </div>
