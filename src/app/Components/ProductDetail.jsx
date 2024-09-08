@@ -104,7 +104,7 @@ const ProductDetail = () => {
             $250
           </h3>
         </div>
-        <div className="sm:flex sm:gap-4">
+        <div className="sm:flex sm:gap-4 sm:mt-4">
           <ProductCounter />
           <Button />
         </div>
